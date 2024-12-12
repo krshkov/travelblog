@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+          rel="stylesheet">
+
+
+    <link rel="stylesheet" href="dist/styles.css">
+</head>
+<body>
+<div class="image_container">
+    <img src="/assets/images/hero_bg.png" alt="Sunny Beach Portrait" class="hero__image">
+</div>
+
+<header>
+    <nav class="nav">
+        <div class="container">
+            <div class="navBrand">
+                <a href="#">
+                    <h4 class="navBrand_title"><span class="navBrand_title--highlighted">TRAVEL</span>BLOG</h4>
+                </a>
+            </div>
+            <div class="navMenu">
+                <ul class="navMenu__list">
+                    <li class="navMenu__item"><a class="navMenu__link" href="#">Articles</a></li>
+                    <li class="navMenu__item"><a class="navMenu__link" href="#">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">Welcome to Travel Blog: Insights, Inspiration, and More!</h1>
+            <hr class="hero__separator">
+            <p class="hero__description">Insights, inspiration, and practical advice on a wide range of topics. Whether
+                you're looking for the latest trends, expert tips, or simply a bit of inspiration to brighten your
+                day!</p>
+            <a href="#latest">
+                <button class="hero__cta button button--outlined">Scroll to articles</button>
+            </a>
+        </div>
+    </div>
+
+    <div id="latest" class="latest container">
+        <div class="latest__header">
+            <h2 class="latest__title">Latest news</h2>
+            <p class="latest__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="latestMenu">
+            <ul class="latestMenu__list">
+                <li class="latestMenu__link latestMenu__link--active">All</li>
+                <li class="latestMenu__link">Adventure</li>
+                <li class="latestMenu__link">Travel</li>
+                <li class="latestMenu__link">Fashion</li>
+                <li class="latestMenu__link">Technology</li>
+                <li class="latestMenu__link">Branding</li>
+            </ul>
+        </div>
+
+        <div class="latest__wrapper">
+            <div class="articleCard">
+                <img src="https://picsum.photos/id/17/400/400" alt="Article Image"
+                     class="articleCard_image">
+
+                <div class="articleCard__content">
+                    <p class="articleCard_date">May, 4 2024</p>
+                    <h5 class="articleCard_title">Lorem ipsum dolor sit</h5>
+                    <p class="articleCard_content">Progressively incentivize cooperative systems through technically
+                        sound functionalities. The credibly productivate seamless data.</p>
+                </div>
+            </div>
+            <div class="articleCard">
+                <img src="https://picsum.photos/id/22/400/400" alt="Article Image"
+                     class="articleCard_image">
+
+                <div class="articleCard__content">
+                    <p class="articleCard_date">May, 4 2024</p>
+                    <h5 class="articleCard_title">Lorem ipsum dolor sit</h5>
+                    <p class="articleCard_content">Progressively incentivize cooperative systems through technically
+                        sound functionalities. The credibly productivate seamless data.</p>
+                </div>
+            </div>
+            <div class="articleCard">
+                <img src="https://picsum.photos/id/33/400/400" alt="Article Image"
+                     class="articleCard_image">
+
+                <div class="articleCard__content">
+                    <p class="articleCard_date">May, 4 2024</p>
+                    <h5 class="articleCard_title">Lorem ipsum dolor sit</h5>
+                    <p class="articleCard_content">Progressively incentivize cooperative systems through technically
+                        sound functionalities. The credibly productivate seamless data.</p>
+                </div>
+            </div>
+            <div class="articleCard">
+                <img src="https://picsum.photos/id/88/400/400" alt="Article Image"
+                     class="articleCard_image">
+
+                <div class="articleCard__content">
+                    <p class="articleCard_date">May, 4 2024</p>
+                    <h5 class="articleCard_title">Lorem ipsum dolor sit</h5>
+                    <p class="articleCard_content">Progressively incentivize cooperative systems through technically
+                        sound functionalities. The credibly productivate seamless data.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="formSection">
+        <div class="container">
+            <h2 class="formSection__title">Sign in form</h2>
+            <form action="#" class="formSection__form">
+                <div class="formSection__flex-group">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="surname">Surname</label>
+                        <input type="text" class="form-control" id="surname" placeholder="Enter surname">
+                    </div>
+                </div>
+                <div class="formSection__flex-group">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="********">
+                    </div>
+                </div>
+                <div class="formSection__flex-group">
+                    <div class="form-group">
+                        <label for="content">Content</label>
+                        <textarea class="form-control" id="content" placeholder="Message" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group--checkbox">
+                            <input type="checkbox" class="form-control--checkbox" id="consent-one">
+                            <label for="consent-one">Consent one</label>
+                        </div>
+                        <div class="form-group--checkbox">
+                            <input type="checkbox" class="form-control--checkbox" id="consent-two" checked>
+                            <label for="consent-two">Consent two (pre checked)</label>
+                        </div>
+                        <button class="formSection__button">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footerContent">
+            <div class="footerContent__menu">
+                <h5 class="footerContent__menu__title">Contact the Publisher</h5>
+                <a class="footerContent__menu__link" href="mailto:example@email.com">example@email.com</a>
+                <a class="footerContent__menu__link" href="tel:+944450904505">+944 450 904 505</a>
+            </div>
+            <div class="footerContent__menu">
+                <h5 class="footerContent__menu__title">Explore</h5>
+                <a class="footerContent__menu__link" href="#">About</a>
+                <a class="footerContent__menu__link" href="#">Partners</a>
+                <a class="footerContent__menu__link" href="#">Job Opportunities</a>
+                <a class="footerContent__menu__link" href="#">Advertise</a>
+                <a class="footerContent__menu__link" href="#">Membership</a>
+            </div>
+            <div class="footerContent__menu">
+                <h5 class="footerContent__menu__title">Headquarter</h5>
+                <!-- Link to google maps -->
+                <a class="footerContent__menu__link" href="#">1999 Middleville,<br>NY 1001, New York<br>USA</a>
+            </div>
+        </div>
+    </div>
+    <div class="footerCopyright">
+        <div class="container">
+            <p>2024 | Travel Blog </p>
+            <a href="#">Subscribe Now</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
