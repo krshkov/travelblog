@@ -348,20 +348,40 @@ nav .container {
 .latest__wrapper {
   margin-top: 24px;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: baseline;
-  flex-wrap: wrap;
   gap: 20px;
+}
+@media (min-width: 1024px) {
+  .latest__wrapper {
+    flex-direction: row;
+  }
+}
+
+.latest__wrapper__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (min-width: calc(768px - 100px)) {
+  .latest__wrapper__row {
+    flex-direction: row;
+  }
 }
 
 /* ARTICLE CARD */
 .articleCard {
-  max-width: 310px;
+  flex: 1;
   overflow: hidden;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .articleCard_image {
+  max-height: 280px;
   width: 100%;
   height: 100%;
   object-fit: cover;
